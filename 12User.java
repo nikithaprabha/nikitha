@@ -1,3 +1,0 @@
-class 12User{
-
-}
