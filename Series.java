@@ -1,27 +1,88 @@
 class Series{
- public static void main(String []watching){
-    String hindiSeries[] = {"Farzi" ,"Undekhi" ,"Paatal Lok" ,"Girls Hostel" ,"Undekhi" ,"Aashram" ,"Anupamaa" ,"C.I.D." ,"Gullak" ,"Mismatched" };
-    String kannadaSeries[] = {"Amruthadhare" ,"Karimani" ,"Seetha Raama" ,"Aase" ,"Naagin" ,"Mahabharat" ,"Gattimela" ,"Tenali Rama" ,"Brahmagantu" ,"Ramachaari" };
-    String malayalamSeries[] = {"1000 Babies" ,"Marimayam" ,"Patharamattu" ,"Poacher" ,"Mounaragam" ,"Manorathangal" ,"Masterpeace" ,"Mizhirandilum" ,"Mangalyam" ,"Kumkumapoovu" };
-    String englishSeries[] = {"tvd" ,"last ship" ,"under the dome" ,"stranger things" ,"wednesday" ,"river diale" ,"13 reasons why" ,"game of thrones" ,"the family man" ,"money heist"  };
+
    
-   System.out.println("No of hindi series :"+ hindiSeries.length); 
-   System.out.println("hindiSeries are as follows: ");
-   System.out.println( hindiSeries[0]+" "+ hindiSeries[1]+" "+ hindiSeries[3]+" "+ hindiSeries[4]+" "+ hindiSeries[5]+" "+ hindiSeries[6]+" "+ hindiSeries[7]+" "+ hindiSeries[8]+" "+ hindiSeries[9]);
-	       
-   System.out.println("No of kannadaSeries :"+ kannadaSeries.length); 
-   System.out.println("kannadaSeries are as follows: ");
-   System.out.println( kannadaSeries[0]+" "+ kannadaSeries[1]+" "+ kannadaSeries[3]+" "+ kannadaSeries[4]+" "+ kannadaSeries[5]+" "+ kannadaSeries[6]+" "+ kannadaSeries[7]+" "+ kannadaSeries[8]+" "+ kannadaSeries[9]);
-	              
-   System.out.println("No of malayalamSeries :"+ malayalamSeries.length); 
-   System.out.println("malayalamSeries are as follows: ");
-   System.out.println( malayalamSeries[0]+" "+ malayalamSeries[1]+" "+ malayalamSeries[3]+" "+ malayalamSeries[4]+" "+ malayalamSeries[5]+" "+ malayalamSeries[6]+" "+ malayalamSeries[7]+" "+ malayalamSeries[8]+" "+ malayalamSeries[9]);
-	       
-   System.out.println("No of englishSeries :"+ englishSeries.length); 
-   System.out.println("englishSeries are as follows: ");
-   System.out.println( englishSeries[0]+" "+ englishSeries[1]+" "+ englishSeries[3]+" "+ englishSeries[4]+" "+ englishSeries[5]+" "+ englishSeries[6]+" "+ englishSeries[7]+" "+ englishSeries[8]+" "+ englishSeries[9]);
-	       	   
-		   
- 
- }
+   static String hindiSeries[] = {"Farzi" ,"Undekhi" ,"Paatal Lok" ,"Girls Hostel" ,"Undekhi" ,"Aashram" ,"Anupamaa" ,"C.I.D." ,"Gullak" ,"Mismatched" };
+   static String kannadaSeries[] = {"Amruthadhare" ,"Karimani" ,"Seetha Raama" ,"Aase" ,"Naagin" ,"Mahabharat" ,"Gattimela" ,"Tenali Rama" ,"Brahmagantu" ,"Ramachaari" };
+   static String malayalamSeries[] = {"1000 Babies" ,"Marimayam" ,"Patharamattu" ,"Poacher" ,"Mounaragam" ,"Manorathangal" ,"Masterpeace" ,"Mizhirandilum" ,"Mangalyam" ,"Kumkumapoovu" };
+   static String englishSeries[] = {"tvd" ,"last ship" ,"under the dome" ,"stranger things" ,"wednesday" ,"river diale" ,"13 reasons why" ,"game of thrones" ,"the family man" ,"money heist"  };
+   
+   
+            public static void main (String k[]){
+   
+                  System.out.println("main starts");
+				  
+				      gethindiSeries();
+				      getkannadaSeries();
+				      getmalayalamSeries();
+				      getenglishSeries();
+				 System.out.println("main ends"); 
+			}
+			
+			
+			
+		//logic for hindiSeries
+		
+		public static void gethindiSeries(){
+			
+		System.out.println("inside the list()");
+			System.out.println("list of Hindi Series avaiable in netflix and colours are:  ");
+		
+			for(String series1 : hindiSeries ){
+			
+			  System.out.println(series1);	
+			}
+		System.out.println("end of new list()");	
+			}
+			
+		//logic for kannada Series	
+			
+		public static void getkannadaSeries(){
+			
+			System.out.println("inside the list()");
+			System.out.println("list of kannada Series avaiable in  colours are:  ");
+		
+			for(String series2 : kannadaSeries ){
+			
+			  System.out.println(series2);	
+				
+			}
+			System.out.println("end of new list()");
+			}	
+	    //logic for malayalamSeries
+
+
+        public static void getmalayalamSeries(){
+			
+			System.out.println("inside the list()");
+			System.out.println("list of malayalam Series avaiable in  hotstar are:  ");
+		
+			for(String series3 : malayalamSeries ){
+			
+			  System.out.println(series3);	
+			}	
+				System.out.println("end of new list()");	
+			}	
+        //logic for english Series
+		
+		
+		
+        public static void getenglishSeries(){
+			
+			System.out.println("inside the list()");
+			System.out.println("list of english Series avaiable in  prime and netflix are:  ");
+		
+			for(String series4 : englishSeries ){
+			
+			  System.out.println(series4);	
+			}
+			System.out.println("end of new list()");
+			}	
+
+     
+
+
+
+
+
 }
+
