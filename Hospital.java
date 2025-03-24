@@ -1,0 +1,14 @@
+class Hospital{
+String id;
+String name;
+String type;
+String appoinment;
+String labAndTesting;
+
+Hospital(){
+
+
+System.out.println("constructor invoked");}
+
+
+}
